@@ -1,13 +1,30 @@
+:root {
+  --colorTextone: #212121;
+  --colorTexttwo: #757575;
+  --colorTextthree: #ffffff;
+  --colorHover: #2196f3;
+  --colorBackgroungPrimary: #2f303a;
+  --colorBackgroungSecondary: #f5f4fa;
+  --colorTextAdditional: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+  color: var(--colorTextthree);
+}
 h2,
 h3 {
-  color: black;
+  color: var(--colorTextone);
+}
+.hero {
+  background-color: var(--colorBackgroungPrimary);
+}
+.footerBackground {
+  background-color: var(--colorBackgroungPrimary);
+}
+.textGraySixtyPercent {
+  color: var(--colorTextAdditional);
 }
 p {
-  color: gray;
+  color: var(--colorTexttwo);
 }
-.h1_button {
-  background-color: gray;
-}
-.footer {
-  background-color: gray;
-}
+/* Hover не проходили, не став робити. Думав що потрібно h1 / h2 / h3 / p зробити у классах але чомусь засумнівався. Якщо треба - перероблю */
