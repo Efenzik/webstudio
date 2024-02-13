@@ -1,7 +1,7 @@
 :root {
-  --colorTextone: #212121;
-  --colorTexttwo: #757575;
-  --colorTextthree: #ffffff;
+  --colorTextOne: #212121;
+  --colorTextTwo: #757575;
+  --colorTextThree: #ffffff;
   --colorHover: #2196f3;
   --colorBackgroungPrimary: #2f303a;
   --colorBackgroungSecondary: #f5f4fa;
@@ -9,11 +9,11 @@
 }
 
 h1 {
-  color: var(--colorTextthree);
+  color: var(--colorTextThree);
 }
 h2,
 h3 {
-  color: var(--colorTextone);
+  color: var(--colorTextOne);
 }
 .hero {
   background-color: var(--colorBackgroungPrimary);
@@ -25,6 +25,6 @@ h3 {
   color: var(--colorTextAdditional);
 }
 p {
-  color: var(--colorTexttwo);
+  color: var(--colorTextTwo);
 }
 /* Hover не проходили, не став робити. Думав що потрібно h1 / h2 / h3 / p зробити у классах але чомусь засумнівався. Якщо треба - перероблю */
