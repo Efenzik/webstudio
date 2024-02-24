@@ -1,6 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
 :root {
   --colorTextOne: #212121;
   --colorTextTwo: #757575;
@@ -9,6 +6,9 @@ body {
   --colorBackgroungPrimary: #2f303a;
   --colorBackgroungSecondary: #f5f4fa;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
