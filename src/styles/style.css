@@ -7,29 +7,39 @@
   --colorBackgroungSecondary: #f5f4fa;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
 }
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 h1 {
   color: var(--colorTextThree);
+  line-height: 1.2;
 }
+
 h2,
 h3 {
   color: var(--colorTextOne);
+  line-height: 1.4;
 }
+
 .centre-title {
   background-color: var(--colorBackgroungPrimary);
 }
+
 .centre-button {
   background-color: var(--colorBackgroungPrimary);
 }
+
 .footerBackground {
   background-color: var(--colorBackgroungPrimary);
 }
+
 .footer-contact-item {
   color: var(--colorTextAdditional);
 }
+
 p {
   color: var(--colorTextTwo);
 }
