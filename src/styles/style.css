@@ -18,13 +18,16 @@ h2,
 h3 {
   color: var(--colorTextOne);
 }
-.hero {
+.centre-title {
+  background-color: var(--colorBackgroungPrimary);
+}
+.centre-button {
   background-color: var(--colorBackgroungPrimary);
 }
 .footerBackground {
   background-color: var(--colorBackgroungPrimary);
 }
-.textGraySixtyPercent {
+.footer-contact-item {
   color: var(--colorTextAdditional);
 }
 p {
