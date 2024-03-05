@@ -8,7 +8,6 @@
   --colorBackgroungSecondary: #f5f4fa;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -22,51 +21,31 @@ body {
   font-size: 14px;
   color: var(--colorTextTwo);
 }
-.hero {
-  background-color: var(--colorBackgroungPrimary);
+.poster-photo {
+  width: 370px;
+  height: 404px;
 }
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
-  color: var(--colorTextThree);
+.poster-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  color: var(--colorTextOne);
 }
-.hero-button {
+.poster-text {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 187%;
-  background-color: var(
-    --colorButton
-  ); /*Думав додати колір з Hover, але якщо я зміню колір при наведення зламаються кнопки тому зробив нову перемінну */
-  border-radius: 4px; /*Заокруглення країв кнопки*/
-}
-.service-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--colorTextOne);
-}
-.service-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  color: #757575;
-}
-.portfolio-title {
-  font-weight: 700;
-  font-size: 36px;
-  color: #212121;
-}
-.team {
-  background-color: var(--colorBackgroungSecondary);
-}
-.team-member-name {
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--colorTextOne);
-}
-.team-member-role {
-  font-weight: 400;
-  font-size: 16px;
   color: var(--colorTextTwo);
 }
+
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--colorTextOne);
+  border-radius: 4px;
+}
+
 .footer {
   background-color: var(--colorBackgroungPrimary);
 }
