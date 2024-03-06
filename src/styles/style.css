@@ -11,16 +11,22 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
-.header-nav-item {
+
+.header-nav-link,
+.header-contact-link {
   font-weight: 500;
   font-size: 14px;
   color: var(--colorTextOne);
+  text-decoration: none;
 }
-.header-contact-item {
+
+.header-nav-link:hover,
+.header-contact-link:hover {
   font-weight: 500;
   font-size: 14px;
-  color: var(--colorTextTwo);
+  color: var(--colorHover);
 }
 .hero {
   background-color: var(--colorBackgroungPrimary);
@@ -28,31 +34,46 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
   color: var(--colorTextThree);
 }
 .hero-button {
-  line-height: 187%;
-  background-color: var(
-    --colorButton
-  ); /*Думав додати колір з Hover, але якщо я зміню колір при наведення зламаються кнопки тому зробив нову перемінну */
-  border-radius: 4px; /*Заокруглення країв кнопки*/
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--colorButton);
+}
+.hero-button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--colorTextThree);
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorTextOne);
+}
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--colorTextTwo);
 }
 .service-title {
   font-weight: 700;
-  font-size: 14px;
-  color: var(--colorTextOne);
-}
-.service-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  color: #757575;
-}
-.portfolio-title {
-  font-weight: 700;
   font-size: 36px;
-  color: #212121;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextOne);
 }
 .team {
   background-color: var(--colorBackgroungSecondary);
@@ -60,11 +81,15 @@ body {
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--colorTextOne);
 }
 .team-member-role {
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--colorTextTwo);
 }
 .footer {
@@ -73,12 +98,49 @@ body {
 .footer-contact-adress {
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   color: var(--colorTextThree);
 }
-.footer-contact-item {
+.footer-contact-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   color: var(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-contact-link:hover {
+  color: var(--colorHover);
+}
+/* ================================================================== */
+.poster-photo {
+  width: 370px;
+  height: 404px;
+}
+.poster-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--colorTextOne);
+}
+.poster-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--colorTextTwo);
+}
+
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextOne);
+  border-radius: 4px;
+}
+.button-text:hover {
+  background-color: var(--colorHover);
 }
