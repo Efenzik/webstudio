@@ -12,6 +12,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: var(--colorTextOne);
+  font-weight: 400px;
 }
 
 .header-nav-link,
@@ -28,6 +30,19 @@ body {
   font-size: 14px;
   color: var(--colorHover);
 }
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--colorTextTwo);
+  text-decoration: none;
+}
+.header-contact:hover {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--colorHover);
+}
+
 .hero {
   background-color: var(--colorBackgroungPrimary);
 }
@@ -40,19 +55,19 @@ body {
   text-align: center;
   color: var(--colorTextThree);
 }
+
 .hero-button {
   border-radius: 4px;
   width: 216px;
   height: 50px;
-  background-color: var(--colorButton);
-}
-.hero-button-text {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--colorTextThree);
+  background-color: var(--colorButton);
+  padding: 10px 32px;
 }
 .advantages-title {
   font-weight: 700;
@@ -77,6 +92,13 @@ body {
 }
 .team {
   background-color: var(--colorBackgroungSecondary);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextOne);
 }
 .team-member-name {
   font-weight: 500;
@@ -105,7 +127,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(255, 255, 255, 0.6);
+  color: var(--colorTextAdditional);
   text-decoration: none;
 }
 .footer-contact-link:hover {
