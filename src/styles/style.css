@@ -122,6 +122,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--colorTextThree);
+  font-style: normal;
 }
 .footer-contact-link {
   font-weight: 400;
@@ -133,6 +134,7 @@ body {
 .footer-contact-link:hover {
   color: var(--colorHover);
 }
+
 /* ================================================================== */
 .poster-photo {
   width: 370px;
