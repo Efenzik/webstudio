@@ -13,13 +13,22 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--colorTextOne);
-  font-weight: 400px;
+  font-weight: 400;
+}
+.container {
+  max-width: 2346px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
 }
 
 .header-nav-link,
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--colorTextOne);
   text-decoration: none;
 }
@@ -33,6 +42,8 @@ body {
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
   text-decoration: none;
@@ -49,6 +60,8 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
+  padding-top: 200px;
+  padding-right: 280px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -62,6 +75,8 @@ body {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
+  padding-top: 350px;
+  padding-right: 200px;
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
@@ -72,6 +87,8 @@ body {
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
+  padding-top: 10px;
+  padding-right: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--colorTextOne);
@@ -86,6 +103,8 @@ body {
 .service-title {
   font-weight: 700;
   font-size: 36px;
+  padding-top: 50px;
+  padding-right: 94px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
