@@ -84,6 +84,11 @@ body {
   background-color: var(--colorButton);
   padding: 10px 32px;
 }
+.advantages {
+  font-weight: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
