@@ -16,11 +16,11 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 2346px;
-  padding: 15px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: none;
 }
 
 .header-nav-link,
@@ -86,14 +86,14 @@ body {
 }
 .advantages {
   font-weight: 1170px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
   padding-top: 10px;
-  padding-right: 10px;
+  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--colorTextOne);
@@ -101,6 +101,8 @@ body {
 .advantages-text {
   font-weight: 400;
   font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--colorTextTwo);
@@ -108,8 +110,8 @@ body {
 .service-title {
   font-weight: 700;
   font-size: 36px;
-  padding-top: 50px;
-  padding-right: 94px;
+  padding-top: 94px;
+  padding-bottom: 50px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
@@ -120,6 +122,8 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 36px;
+  padding-top: 118px;
+  padding-bottom: 50px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
@@ -127,6 +131,8 @@ body {
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
@@ -134,6 +140,8 @@ body {
 .team-member-role {
   font-weight: 400;
   font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextTwo);

@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/normalize.css" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,6 @@
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a href="./index.html" class="header-nav-link">Студія</a>
-              <!--Я не знаю як повернутися до файлу щоб знайти його у папці T_T-->
             </li>
             <li class="header-nav-item">
               <a href="./src/pages/portfolio.html" class="header-nav-link"
@@ -55,12 +55,14 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        <section class="hero">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button">Замовити послугу</button>
-        </section>
-        <section class="advantages">
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
           <ul class="advantages-list">
             <li class="advantages-item">
               <h2 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -90,8 +92,10 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="services">
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
           <h2 class="service-title">Чим ми займаємося</h2>
           <div class="service-images">
             <div class="service-image">
@@ -104,8 +108,10 @@
               <img src="./src/images/work/laptop3.jpg" alt="Фото Комп'ютера" />
             </div>
           </div>
-        </section>
-        <section class="team">
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <div class="team-members">
             <article class="team-member">
@@ -138,10 +144,9 @@
               <p class="team-member-role">UI Designer</p>
             </article>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-
     <footer class="footer">
       <div class="container">
         <a href="#" class="footer-logo">
