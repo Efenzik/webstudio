@@ -200,3 +200,11 @@ body {
 .button-text:hover {
   background-color: var(--colorHover);
 }
+.service-image {
+  max-height: 270px;
+  max-width: 260px;
+}
+.member-photo {
+  max-height: 270px;
+  max-width: 260px;
+}
