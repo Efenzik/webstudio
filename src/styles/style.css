@@ -16,52 +16,41 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-nav-link,
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--colorTextOne);
-  text-decoration: none;
 }
 
 .header-nav-link:hover,
 .header-contact-link:hover {
-  font-weight: 500;
-  font-size: 14px;
   color: var(--colorHover);
 }
 .header-contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
-  text-decoration: none;
-}
-.header-contact:hover {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--colorHover);
 }
 
 .hero {
   background-color: var(--colorBackgroungPrimary);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  padding-top: 200px;
-  padding-right: 280px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -71,13 +60,9 @@ body {
 
 .hero-button {
   border-radius: 4px;
-  width: 216px;
-  height: 50px;
   font-weight: 700;
   font-size: 16px;
-  padding-top: 350px;
-  padding-right: 200px;
-  line-height: 187%;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--colorTextThree);
@@ -85,27 +70,25 @@ body {
   padding: 10px 32px;
 }
 .advantages {
-  font-weight: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 95px;
 }
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
   padding-top: 10px;
-  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--colorTextOne);
 }
 .advantages-text {
-  font-weight: 400;
   font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--colorTextTwo);
+}
+.service {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 .service-title {
   font-weight: 700;
@@ -199,12 +182,4 @@ body {
 }
 .button-text:hover {
   background-color: var(--colorHover);
-}
-.service-image {
-  max-height: 270px;
-  max-width: 260px;
-}
-.member-photo {
-  max-height: 270px;
-  max-width: 260px;
 }
