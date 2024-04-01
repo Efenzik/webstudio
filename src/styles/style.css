@@ -101,12 +101,12 @@ body {
 }
 .team {
   background-color: var(--colorBackgroungSecondary);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  padding-top: 118px;
-  padding-bottom: 50px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
@@ -114,8 +114,6 @@ body {
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
-  padding-top: 30px;
-  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
@@ -123,14 +121,14 @@ body {
 .team-member-role {
   font-weight: 400;
   font-size: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextTwo);
 }
 .footer {
   background-color: var(--colorBackgroungPrimary);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-contact-adress {
   font-weight: 400;
@@ -144,7 +142,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--colorTextAdditional);
-  text-decoration: none;
 }
 .footer-contact-link:hover {
   color: var(--colorHover);
