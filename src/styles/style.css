@@ -93,8 +93,6 @@ body {
 .service-title {
   font-weight: 700;
   font-size: 36px;
-  padding-top: 94px;
-  padding-bottom: 50px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
