@@ -86,9 +86,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--colorTextTwo);
 }
-.service {
-  padding-top: 95px;
-  padding-bottom: 95px;
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .service-title {
   font-weight: 700;
