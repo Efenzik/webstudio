@@ -26,6 +26,26 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header-container {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+.header-contact-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  align-items: center;
+}
 
 .header-nav-link,
 .header-contact-link {
@@ -90,6 +110,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.service-images {
+  display: flex;
+}
 .service-title {
   font-weight: 700;
   font-size: 36px;
@@ -101,6 +124,10 @@ body {
   background-color: var(--colorBackgroungSecondary);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.team-members {
+  display: flex;
+  flex-direction: row;
 }
 .team-title {
   font-weight: 700;
