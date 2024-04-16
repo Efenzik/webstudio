@@ -29,6 +29,9 @@ body {
 .header-container {
   display: flex;
 }
+.header-logo {
+  margin-right: 94px;
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -229,7 +232,29 @@ body {
   text-align: center;
   color: var(--colorTextOne);
   border-radius: 4px;
+  margin-bottom: 50px;
 }
 .button-text:hover {
   background-color: var(--colorHover);
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+}
+.poster-photo {
+  margin-bottom: 20px;
+}
+.buttons-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 575px;
+  margin: 0 auto;
+}
+.information-posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 60px) / 6);
 }
