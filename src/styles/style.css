@@ -204,6 +204,13 @@ body {
 }
 
 /* ================================================================== */
+.portfolio {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .poster-photo {
   width: 370px;
   height: 404px;
@@ -237,10 +244,7 @@ body {
 .button-text:hover {
   background-color: var(--colorHover);
 }
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-}
+
 .poster-photo {
   margin-bottom: 20px;
 }
@@ -256,5 +260,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - 60px) / 6);
+}
+.information-poster {
+  flex-basis: calc((100% - 60px) / 3);
 }
