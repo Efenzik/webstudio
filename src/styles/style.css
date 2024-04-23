@@ -204,17 +204,7 @@ body {
 }
 
 /* ================================================================== */
-.portfolio {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.poster-photo {
-  width: 370px;
-  height: 404px;
-}
+
 .poster-title {
   font-weight: 700;
   font-size: 18px;
@@ -240,8 +230,13 @@ body {
   color: var(--colorTextOne);
   border-radius: 4px;
   margin-bottom: 50px;
+  padding: 6px 25px;
 }
 .button-text:hover {
+  padding: 5px 24px;
+  color: var(--colorMain);
+  border-radius: 4px;
+  border: solid 1px var(--colorHover);
   background-color: var(--colorHover);
 }
 
@@ -250,16 +245,17 @@ body {
 }
 .buttons-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 575px;
-  margin: 0 auto;
+
+  gap: 8px;
 }
 .information-posters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .information-poster {
   flex-basis: calc((100% - 60px) / 3);
