@@ -113,7 +113,7 @@ body {
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
-  padding-top: 10px;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--colorTextOne);
@@ -137,6 +137,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
   text-align: center;
   color: var(--colorTextOne);
 }
@@ -165,6 +166,8 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-member-role {
   font-weight: 400;
@@ -172,6 +175,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextTwo);
+  margin-bottom: 30px;
 }
 .footer {
   background-color: var(--colorBackgroungPrimary);
@@ -204,14 +208,22 @@ body {
 }
 
 /* ================================================================== */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.poster-photo {
+  margin-bottom: 20px;
+}
 
 .poster-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   color: var(--colorTextOne);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .poster-text {
   font-weight: 400;
@@ -219,6 +231,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--colorTextTwo);
+  margin-bottom: 20px;
 }
 
 .button-text {
@@ -240,14 +253,10 @@ body {
   background-color: var(--colorHover);
 }
 
-.poster-photo {
-  margin-bottom: 20px;
-}
 .buttons-list {
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 8px;
 }
 .information-posters {
