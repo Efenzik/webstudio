@@ -105,6 +105,27 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.advantages-item::before {
+  display: block; /*Робить елемент - Блочним*/
+  content: ""; /*Без content: не буде зміни в згенерованому тексті веб-сторінки*/
+  height: 120px; /*Висота елемента -_-*/
+  background-color: var(--colorBackgroungSecondary); /*Колір фону*/
+  background-size: auto; /*Стандартний розмір картинки*/
+  background-position: center; /*Робить елементи по центру*/
+  background-repeat: no-repeat; /*Робить що б картинки не повторювалась*/
+  margin-bottom: 30px; /*Відступ між фото та advantages-title/text*/
+  background-image: url(../images/advantages-icons/antenna-1.svg); /*Картинка на фоні*/
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../images/advantages-icons/clock-1.svg);
+} /*Можна кожен раз робити 2й класс. Наприклад advantages-item-1 / 2 / 3 / 4 або можна зробити через nth-child. */
+.advantages-item:nth-child(3)::before {
+  background-image: url(../images/advantages-icons/diagram-1.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../images/advantages-icons/astronaut-1.svg);
+}
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
