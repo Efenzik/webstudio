@@ -174,12 +174,20 @@ body {
   align-items: center;
   column-gap: 30px;
 }
+.team-member {
+  padding-bottom: 30px;
+  background-color: var(--colorTextThree);
+}
+.member-photo {
+  margin-bottom: 30px;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
+  margin-bottom: 50px;
 }
 .team-member-name {
   font-weight: 500;
@@ -187,7 +195,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextOne);
-  margin-top: 30px;
+
   margin-bottom: 10px;
 }
 .team-member-role {
@@ -196,7 +204,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextTwo);
-  margin-bottom: 30px;
 }
 .footer {
   background-color: var(--colorBackgroungPrimary);
