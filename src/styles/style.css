@@ -114,16 +114,16 @@ body {
   background-position: center; /*Робить елементи по центру*/
   background-repeat: no-repeat; /*Робить що б картинки не повторювалась*/
   margin-bottom: 30px; /*Відступ між фото та advantages-title/text*/
-  background-image: url(../images/advantages-icons/antenna-1.webp); /*Картинка на фоні*/
+  background-image: url(../images/advantages-icons/antenna-1.svg); /*Картинка на фоні*/
 }
 .advantages-item:nth-child(2)::before {
-  background-image: url(../images/advantages-icons/clock-1.webp);
+  background-image: url(../images/advantages-icons/clock-1.svg);
 } /*Можна кожен раз робити 2й класс. Наприклад advantages-item-1 / 2 / 3 / 4 або можна зробити через nth-child. */
 .advantages-item:nth-child(3)::before {
-  background-image: url(../images/advantages-icons/diagram-1.webp);
+  background-image: url(../images/advantages-icons/diagram-1.svg);
 }
 .advantages-item:nth-child(4)::before {
-  background-image: url(../images/advantages-icons/astronaut-1.webp);
+  background-image: url(../images/advantages-icons/astronaut-1.svg);
 }
 
 .advantages-list {
@@ -177,20 +177,8 @@ body {
 .team-member {
   padding-bottom: 30px;
   background-color: var(--colorTextThree);
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.15),
-    0px 1px 3px rgba(0, 0, 0, 0.15);
-  /* box shadow : 
-    1 значення-зсув по горизонталі
-    2 значення-зміщення по вертикалі
-    3 значення-розмиття
-    4 значення-колір тіні
-    ; 
-    */
-
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .member-photo {
   margin-bottom: 30px;
@@ -294,26 +282,8 @@ body {
   border: solid 1px var(--colorHover);
   background-color: var(--colorHover);
 
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25), 0px 5px 15px rgba(0, 0, 0, 0.25),
-    0 5px 15px rgba(0, 0, 0, 0.25);
-  /* Перша тінь ===
-Зсув по горизонталі - 0px
-Зсув по вертикалі - 5px
-Розмиття -15px
-Колір: чорний/прозорістю 15%
-
-Друга тінь ===
-Зміщення горизонталлю: 0
-Зсув по вертикалі - 5px
-Розмиття - 15px
-Колір: чорний/прозорістю 5%
-
-Третя тінь ===
-Зміщення горизонталлю - 0
-Зсув по вертикалі - 5px
-Розмиття - 15px
-Цветчерний / прозорістю 15%
- */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .buttons-list {
@@ -333,6 +303,6 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 .information-poster:hover {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.05),
-    0px 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
