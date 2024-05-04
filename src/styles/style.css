@@ -89,6 +89,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--colorTextThree);
+  max-width: 696px;
 }
 
 .hero-button {
@@ -253,10 +254,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--colorTextOne);
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .poster-text {
   font-weight: 400;
@@ -264,9 +264,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--colorTextTwo);
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .button-text {
