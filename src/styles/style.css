@@ -8,6 +8,7 @@
   --colorBackgroungSecondary: #f5f4fa;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
   --colorCardBorder: #eeeeee;
+  --colorHeroGradientOverlay: #2f303a;
 }
 
 body {
@@ -69,11 +70,16 @@ body {
 }
 
 .hero {
-  background-color: var(--colorBackgroungPrimary);
+  background-color: var(--colorBackgroundPrimary);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: url(../images/hero-backgroung-image.webp);
+  background-size: cover; /*Картинка на увесь класс hero*/
+  background-position: center; /*Картинка по центру*/
+  background-repeat: no-repeat; /*Картинка не повторюється */
 }
+
 .hero-container {
   display: flex;
   flex-direction: column;
