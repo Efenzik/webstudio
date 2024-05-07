@@ -8,7 +8,7 @@
   --colorBackgroungSecondary: #f5f4fa;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
   --colorCardBorder: #eeeeee;
-  --colorHeroGradientOverlay: #2f303a;
+  --colorHeroGradientOverlay: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -74,7 +74,11 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(../images/hero-backgroung-image.webp);
+  background-image: linear-gradient(
+      var(--colorHeroGradientOverlay),
+      var(--colorHeroGradientOverlay)
+    ),
+    url(../images/hero-backgroung-image.webp);
   background-size: cover; /*Картинка на увесь класс hero*/
   background-position: center; /*Картинка по центру*/
   background-repeat: no-repeat; /*Картинка не повторюється */
