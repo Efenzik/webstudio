@@ -177,7 +177,7 @@ body {
 
 .team {
   background-color: var(--colorBackgroungSecondary);
-  padding-top: 94px;
+
   padding-bottom: 94px;
 }
 .team-members {
@@ -187,7 +187,6 @@ body {
   column-gap: 30px;
 }
 .team-member {
-  padding-bottom: 30px;
   background-color: var(--colorTextThree);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -218,6 +217,39 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--colorTextTwo);
+  padding-bottom: 16px;
+}
+.team-wnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+.wnetwork-icon {
+  width: 20px;
+  height: 20px;
+}
+.team-wnetwork-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+.team-wnetwork {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  transition: 0.4s ease;
+}
+
+.team-wnetwork:hover {
+  background-color: var(--colorHover);
+  fill: var(--colorTextThree);
+}
+.wnetwork-icon:hover {
+  fill: var(--colorTextThree);
 }
 .footer {
   background-color: var(--colorBackgroungPrimary);
