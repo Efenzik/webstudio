@@ -352,12 +352,12 @@ body {
   transition: color 0.4s;
 }
 .footer-wnetwork-title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--colorTextThree);
+  margin-bottom: 20px;
 }
 .footer-wnetworks {
   display: flex;
@@ -369,12 +369,9 @@ body {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+  border-radius: 90%;
 }
-
 .footer-wnetwork:hover {
-  width: 44px;
-  height: 44px;
   background-color: var(--colorHover);
 }
 .footer-wnetwork-link {
