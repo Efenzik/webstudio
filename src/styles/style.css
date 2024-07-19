@@ -64,10 +64,35 @@ body {
 .header-nav-link:hover,
 .header-contact-link:hover {
   color: var(--colorHover);
+  transition: color 0.4s;
 }
 .header-contact-link {
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
+  transition: color 0.4s;
+}
+/* header - icons */
+.header-gmail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--colorCustomers);
+  transition: color 0.4s;
+  margin-right: 10px;
+}
+.header-phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--colorCustomers);
+  transition: color 0.4s;
+  margin-right: 10px;
+}
+.header-contact-item:hover {
+  color: var(--colorHover);
+}
+.header-contact-item:hover .header-gmail-icon,
+.header-contact-item:hover .header-phone-icon {
+  fill: var(--colorHover);
+  transition: 0.4s;
 }
 
 .hero {
@@ -80,9 +105,9 @@ body {
       var(--colorHeroGradientOverlay)
     ),
     url(../images/hero-backgroung-image.webp);
-  background-size: cover; /*Картинка на увесь класс hero*/
-  background-position: center; /*Картинка по центру*/
-  background-repeat: no-repeat; /*Картинка не повторюється */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-container {
@@ -293,13 +318,16 @@ body {
 .customer:hover .customer-logo {
   fill: var(--colorHover);
 }
+/* footer */
 .footer {
   background-color: var(--colorBackgroungPrimary);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo-photo {
+
+.footer-logo {
   margin-bottom: 20px;
+  display: inline-block;
 }
 .footer-contact-list {
   display: flex;
@@ -321,6 +349,45 @@ body {
 }
 .footer-contact-link:hover {
   color: var(--colorHover);
+  transition: color 0.4s;
+}
+.footer-wnetwork-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorTextThree);
+}
+.footer-wnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer-wnetwork {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-wnetwork:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--colorHover);
+}
+.footer-wnetwork-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wnetwork-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--colorTextThree);
 }
 
 /* ================================================================== */
