@@ -9,6 +9,7 @@
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
   --colorCardBorder: #eeeeee;
   --colorHeroGradientOverlay: rgba(47, 48, 58, 0.4);
+  --colorCustomers: #afb1b8;
 }
 
 body {
@@ -229,6 +230,7 @@ body {
 .wnetwork-icon {
   width: 20px;
   height: 20px;
+  fill: var(--colorCustomers);
 }
 .team-wnetwork-link {
   display: flex;
@@ -250,6 +252,46 @@ body {
 }
 .wnetwork-icon:hover {
   fill: var(--colorTextThree);
+}
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.customer {
+  border: 1px solid var(--colorCustomers);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+.customer-link {
+  width: 170px;
+  height: 92px;
+}
+.customer-logo {
+  width: 106px;
+  height: 60px;
+  fill: var(--colorCustomers);
+  transition: fill 0.4s ease;
+}
+.customer:hover {
+  border: 1px solid var(--colorHover);
+}
+.customer:hover .customer-logo {
+  fill: var(--colorHover);
 }
 .footer {
   background-color: var(--colorBackgroungPrimary);
