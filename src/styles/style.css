@@ -406,6 +406,13 @@ body {
   height: 20px;
   fill: var(--colorTextThree);
 }
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+.footer-first {
+  gap: 70px;
+}
 
 /* ================================================================== */
 .portfolio {
