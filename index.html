@@ -477,7 +477,28 @@
             </li>
           </ul>
         </div>
+        <form action="send" class="footer-form">
+          <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+          <div class="footer-form-container">
+            <div class="footer-form-space">
+              <input
+                type="mail"
+                id="email"
+                required
+                placeholder="Email"
+                class="footer-form-space"
+              />
+            </div>
+            <button class="footer-form-button">
+              Підписатися
+              <svg class="form-button-send">
+                <use href="./src/images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <script src="./src/javascript/modal.js"></script>
   </body>
 </html>
