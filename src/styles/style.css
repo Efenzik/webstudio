@@ -68,6 +68,10 @@ body {
   color: var(--colorHover);
   transition: color 0.4s;
 }
+.header-contact-item {
+  display: flex;
+  align-items: center;
+}
 .header-contact-link {
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
@@ -95,6 +99,13 @@ body {
 .header-contact-item:hover .header-phone-icon {
   fill: var(--colorHover);
   transition: 0.4s;
+}
+.header-contact-list,
+.header-nav-list,
+.header-nav,
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
