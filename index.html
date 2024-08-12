@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div class="modal-form-space">
-                  <label for="phone" class="modal-form-label">Телефон</label>
+                  <label for="tel" class="modal-form-label">Телефон</label>
                   <div class="modal-form-case">
                     <svg class="modal-form-icon">
                       <use
@@ -103,13 +103,59 @@
                     </svg>
                     <input
                       class="modal-form-input"
-                      type="phone"
+                      type="tel"
                       required
-                      name="phone"
-                      id="phone"
+                      name="tel"
+                      id="tel"
                     />
                   </div>
                 </div>
+                <div class="modal-form-space">
+                  <label for="email" class="modal-form-label">Пошта</label>
+                  <div class="modal-form-case">
+                    <svg class="modal-form-icon">
+                      <use
+                        href="./src/img/icons/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                    <input
+                      class="modal-form-input"
+                      type="email"
+                      required
+                      name="email"
+                      id="email"
+                    />
+                  </div>
+                </div>
+
+                <div class="modal-form-space modal-form-comment">
+                  <label class="modal-form-label form-label-comment" for="text"
+                    >Коментар</label
+                  >
+                  <div class="form-wrapper">
+                    <input
+                      class="modal-form-input"
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Введіть текст"
+                    />
+                  </div>
+                </div>
+                <div class="modal-checkbox-field">
+                  <label for="checkbox" class="modal-accept"></label>
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    class="modal-accept-input"
+                  />
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="#" class="modal-accept-link"
+                    ><span class="modal-accept-agree">Умови договору</span></a
+                  >
+                </div>
+                <button class="modal-button-send">Відравити</button>
               </form>
             </div>
           </div>
