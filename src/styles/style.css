@@ -76,6 +76,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
   transition: color 0.4s;
+  display: flex;
+  align-items: center;
 }
 /* header - icons */
 .header-gmail-icon {
@@ -98,7 +100,7 @@ body {
 .header-contact-item:hover .header-gmail-icon,
 .header-contact-item:hover .header-phone-icon {
   fill: var(--colorHover);
-  transition: 0.4s;
+  transition: 0.45s;
 }
 .header-contact-list,
 .header-nav-list,
@@ -244,6 +246,7 @@ body {
 
 .team {
   background-color: var(--colorBackgroungSecondary);
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-members {
@@ -433,6 +436,65 @@ body {
 }
 .footer-first {
   gap: 70px;
+}
+
+.form-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-form-space {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.form-space {
+  padding: 16px 0px 15px 16px;
+  width: 360px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: var(--colorTextThree);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  gap: 10px;
+  background-color: var(--colorHover);
+}
+
+.footer-form-button:hover {
+  -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.form-button-send {
+  fill: var(--colorTextThree);
+  width: 24px;
+  height: 24px;
 }
 
 /* ================================================================== */

@@ -63,7 +63,56 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-button-close" data-modal-close>
+                <svg>
+                  <use href="./src/images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
+              <form class="modal-forms" action="form">
+                <div class="modal-form-space">
+                  <label for="name" class="modal-form-label">Ім'я</label>
+                  <div class="modal-form-case">
+                    <svg class="modal-form-icon">
+                      <use
+                        href="./src/img/icons/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                    <input
+                      class="modal-form-input"
+                      type="text"
+                      required
+                      name="name"
+                      id="name"
+                      minlength="2"
+                    />
+                  </div>
+                </div>
+                <div class="modal-form-space">
+                  <label for="phone" class="modal-form-label">Телефон</label>
+                  <div class="modal-form-case">
+                    <svg class="modal-form-icon">
+                      <use
+                        href="./src/img/icons/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                    <input
+                      class="modal-form-input"
+                      type="phone"
+                      required
+                      name="phone"
+                      id="phone"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -479,20 +528,22 @@
         </div>
         <form action="./index.html" class="footer-form">
           <h2 class="footer-form-title">Підпишіться на розсилку</h2>
-          <div class="footer-form-space">
-            <input
-              type="mail"
-              id="email"
-              placeholder="Email"
-              class="footer-form-space"
-            />
+          <div class="form-container">
+            <div class="footer-form-space">
+              <input
+                type="mail"
+                id="email"
+                placeholder="E-mail"
+                class="form-space"
+              />
+            </div>
+            <button class="footer-form-button">
+              Підписатися
+              <svg class="form-button-send">
+                <use href="./src/images/symbol-defs.svg#form-send"></use>
+              </svg>
+            </button>
           </div>
-          <button class="footer-form-button">
-            Підписатися
-            <svg class="form-button-send">
-              <use href="./src/images/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </button>
         </form>
       </div>
     </footer>
