@@ -601,25 +601,27 @@ body.no-scroll {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-button-close {
+
+.modal-icon-close {
+  cursor: pointer;
   width: 30px;
   height: 30px;
-  position: absolute;
   padding: 6px;
+  position: absolute;
   top: 6px;
   right: 0;
-  cursor: pointer;
 }
-.modal-button-close:hover {
-  cursor: pointer;
+.modal-icon-close:hover {
+  fill: var(--colorHover);
+  transform: scale(1.25);
+  transition: 0.5s;
 }
 .modal-title {
-  text-align: center;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
-  color: var(--colorDefault);
-  margin-bottom: 12px;
+  text-align: center;
+  color: #212121;
 }
 .modal-form-icon {
   width: 20px;
@@ -647,4 +649,62 @@ body.no-scroll {
 }
 .modal-form-case {
   border: 1px solid var(--colorHover);
+}
+.modal-form-input {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+#text {
+  padding: 16px 12px;
+  height: 95px;
+  margin-bottom: 20px;
+}
+.modal-form-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.modal-checkbox-field {
+  display: flex;
+
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  color: var(--colorTextTwo);
+}
+.modal-accept-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.modal-accept-agree {
+  color: var(--colorHover);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.modal-button-send {
+  color: var(--colorTextThree);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px 52px;
+  background-color: var(--colorHover);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: block;
+  transition: background-color var(--animPrimery);
+}
+.modal-button-send:hover {
+  -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  cursor: pointer;
+  transition: 0.7s ease;
 }
