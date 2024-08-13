@@ -643,8 +643,7 @@ body.no-scroll {
 .modal-form-case {
   display: flex;
   align-items: center;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+
   margin-bottom: 10px;
 }
 .modal-form-case {
@@ -668,7 +667,6 @@ body.no-scroll {
 }
 .modal-checkbox-field {
   display: flex;
-
   justify-content: center;
   gap: 5px;
   margin-bottom: 30px;
@@ -684,7 +682,6 @@ body.no-scroll {
 .modal-accept-agree {
   color: var(--colorHover);
   text-decoration: underline;
-  text-decoration-skip-ink: none;
 }
 .modal-button-send {
   color: var(--colorTextThree);
@@ -693,13 +690,14 @@ body.no-scroll {
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 10px 52px;
+  padding-top: 10px;
+  padding-right: 52px;
+  padding-bottom: 10px;
+  padding-left: 52px;
   background-color: var(--colorHover);
   border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: block;
-  transition: background-color var(--animPrimery);
 }
 .modal-button-send:hover {
   -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
