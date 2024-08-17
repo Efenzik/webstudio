@@ -58,9 +58,45 @@ body.no-scroll {
   column-gap: 50px;
   align-items: center;
 }
+.header-nav-link {
+  position: relative;
+}
+
+.header-nav-link::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--colorHover);
+  bottom: -25px;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.header-nav-link.nav-link-activated {
+  color: var(--colorHover);
+}
+
+.header-nav-link.nav-link-activated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--colorHover);
+  bottom: -25px;
+  transform: scaleX(1);
+}
+
+.header-nav-link:hover::after {
+  transform: scaleX(1);
+}
 
 .header-nav-link,
 .header-contact-link {
+  position: relative;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   color: var(--colorTextOne);
@@ -593,10 +629,10 @@ body.no-scroll {
 .modal {
   background-color: #fff;
   position: absolute;
-  padding-top: 38px;
-  padding-right: 32px;
-  padding-bottom: 42px;
-  padding-left: 48px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -622,6 +658,7 @@ body.no-scroll {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 12px;
 }
 .modal-form-icon {
   width: 20px;
@@ -643,11 +680,14 @@ body.no-scroll {
 .modal-form-case {
   display: flex;
   align-items: center;
-
   margin-bottom: 10px;
 }
 .modal-form-case {
+  border: 1px solid var(--colorTextOne);
+}
+.modal-form-case:hover {
   border: 1px solid var(--colorHover);
+  transition: 0.4s ease-in-out;
 }
 .modal-form-input {
   width: 100%;

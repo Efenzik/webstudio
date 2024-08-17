@@ -19,6 +19,7 @@ h6 {
 }
 button {
   border: none;
+  outline: none;
 }
 ul {
   list-style: none;
@@ -26,4 +27,8 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+input {
+  border: none;
+  outline: none;
 }
