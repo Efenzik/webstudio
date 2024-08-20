@@ -578,13 +578,12 @@ body.no-scroll {
 }
 .button-text:hover {
   padding: 5px 24px;
-  color: var(--colorMain);
-  border-radius: 4px;
-  border: solid 1px var(--colorHover);
+  color: var(--colorTextThree);
   background-color: var(--colorHover);
-
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
+  -moz-box-shadow: 0px 0px 16px 3px rgba(36, 104, 252, 1);
+  box-shadow: 0px 0px 16px 3px rgba(36, 104, 252, 1);
 }
 
 .buttons-list {
@@ -687,12 +686,18 @@ body.no-scroll {
 }
 .modal-form-case:hover {
   border: 1px solid var(--colorHover);
-  transition: 0.4s ease-in-out;
 }
 .modal-form-input {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+.form-wrapper {
+  border: 1px solid var(--colorTextOne);
+  margin-bottom: 20px;
+}
+.form-wrapper:hover {
+  border: 1px solid var(--colorHover);
 }
 #text {
   padding: 16px 12px;
