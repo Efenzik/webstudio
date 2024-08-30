@@ -12,6 +12,7 @@
   --colorCustomers: #afb1b8;
   --colorServiceBg: rgba(47, 48, 58, 0.8);
   --colorFooterLogos: rgba(255, 255, 255, 0.1);
+  --animOne: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -72,7 +73,7 @@ body.no-scroll {
   background-color: var(--colorHover);
   bottom: -25px;
   transform: scaleX(0);
-  transition: transform 0.4s ease-in-out;
+  transition: var(--animOne);
 }
 .header-nav-link.nav-link-activated {
   color: var(--colorHover);
@@ -105,7 +106,7 @@ body.no-scroll {
 .header-nav-link:hover,
 .header-contact-link:hover {
   color: var(--colorHover);
-  transition: color 0.4s;
+  transition: var(--animOne);
 }
 .header-contact-item {
   display: flex;
@@ -114,7 +115,7 @@ body.no-scroll {
 .header-contact-link {
   letter-spacing: 0.02em;
   color: var(--colorTextTwo);
-  transition: color 0.4s;
+  transition: var(--animOne);
   display: flex;
   align-items: center;
 }
@@ -123,14 +124,14 @@ body.no-scroll {
   width: 16px;
   height: 12px;
   fill: var(--colorCustomers);
-  transition: color 0.4s;
+  transition: var(--animOne);
   margin-right: 10px;
 }
 .header-phone-icon {
   width: 10px;
   height: 16px;
   fill: var(--colorCustomers);
-  transition: color 0.4s;
+  transition: var(--animOne);
   margin-right: 10px;
 }
 .header-contact-item:hover {
@@ -139,7 +140,7 @@ body.no-scroll {
 .header-contact-item:hover .header-gmail-icon,
 .header-contact-item:hover .header-phone-icon {
   fill: var(--colorHover);
-  transition: 0.45s;
+  transition: var(--animOne);
 }
 .header-contact-list,
 .header-nav-list,
@@ -198,7 +199,7 @@ body.no-scroll {
   -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: var(--animOne);
 }
 .advantages {
   padding-top: 94px;
@@ -350,7 +351,7 @@ body.no-scroll {
   width: 44px;
   height: 44px;
   border-radius: 100%;
-  transition: 0.4s ease;
+  transition: var(--animOne);
 }
 
 .team-wnetwork:hover {
@@ -392,7 +393,7 @@ body.no-scroll {
   width: 106px;
   height: 60px;
   fill: var(--colorCustomers);
-  transition: fill 0.4s ease;
+  transition: var(--animOne);
 }
 .customer:hover {
   border: 1px solid var(--colorHover);
@@ -431,7 +432,7 @@ body.no-scroll {
 }
 .footer-contact-link:hover {
   color: var(--colorHover);
-  transition: color 0.4s;
+  transition: var(--animOne);
 }
 .footer-wnetwork-title {
   font-weight: 700;
@@ -455,7 +456,7 @@ body.no-scroll {
 }
 .footer-wnetwork:hover {
   background-color: var(--colorHover);
-  transition: background-color 0.4s;
+  transition: var(--animOne);
 }
 .footer-wnetwork-link {
   width: 44px;
@@ -527,7 +528,7 @@ body.no-scroll {
   -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: var(--animOne);
 }
 
 .form-button-send {
@@ -580,7 +581,7 @@ body.no-scroll {
   padding: 5px 24px;
   color: var(--colorTextThree);
   background-color: var(--colorHover);
-  transition: 0.4s;
+  transition: var(--animOne);
   cursor: pointer;
   -moz-box-shadow: 0px 0px 16px 3px rgba(36, 104, 252, 1);
   box-shadow: 0px 0px 16px 3px rgba(36, 104, 252, 1);
@@ -649,7 +650,7 @@ body.no-scroll {
 .modal-icon-close:hover {
   fill: var(--colorHover);
   transform: scale(1.25);
-  transition: 0.5s;
+  transition: var(--animOne);
 }
 .modal-title {
   font-weight: 700;
@@ -749,5 +750,5 @@ body.no-scroll {
   -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: var(--animOne);
 }
