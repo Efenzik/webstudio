@@ -608,6 +608,51 @@ body.no-scroll {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
+
+.portfolio-card-photo {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card-photo:hover .portfolio-card-back {
+  transform: translateY(0);
+}
+
+.portfolio-card-title {
+  color: var(--colorDefault);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-card-name {
+  color: var(--colorOpacityContact);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-card-back {
+  position: absolute;
+  color: var(--colorMain);
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform var(--animPrimery);
+}
+
 /* ============================================================ MODAL MODAL MODAL */
 /* ============================================================ MODAL MODAL MODAL */
 /* ============================================================ MODAL MODAL MODAL */
