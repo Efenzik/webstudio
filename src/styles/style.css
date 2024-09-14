@@ -609,18 +609,17 @@ body.no-scroll {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-card-photo {
+.poster-photo {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-card-photo:hover .portfolio-card-back {
+.poster-photo:hover .portfolio-card-back {
   transform: translateY(0);
 }
 
-.portfolio-card-title {
-  color: var(--colorDefault);
+.poster-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -629,8 +628,7 @@ body.no-scroll {
   padding-right: 24px;
 }
 
-.portfolio-card-name {
-  color: var(--colorOpacityContact);
+.poster-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
@@ -641,7 +639,7 @@ body.no-scroll {
 
 .portfolio-card-back {
   position: absolute;
-  color: var(--colorMain);
+  color: var(--colorTextThree);
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
@@ -649,8 +647,8 @@ body.no-scroll {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   top: 0;
-  transform: translateY(100%);
-  transition: transform var(--animPrimery);
+  transform: translateY(100%); /* Исходное положение текста вне видимости */
+  transition: var(--animOne); /* Плавный переход */
 }
 
 /* ============================================================ MODAL MODAL MODAL */
