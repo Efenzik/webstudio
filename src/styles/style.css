@@ -662,6 +662,7 @@ body.no-scroll {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.35);
   opacity: 3;
+  transition: var(--animOne);
 }
 
 .backdrop.is-hidden {
@@ -727,17 +728,23 @@ body.no-scroll {
 }
 .modal-form-case {
   border: 1px solid var(--colorTextOne);
+  border-radius: 4px;
 }
 .modal-form-case:hover {
   border: 1px solid var(--colorHover);
+}
+.modal-form-case:hover .modal-form-icon {
+  fill: var(--colorHover);
 }
 .modal-form-input {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
 }
+
 .form-wrapper {
   border: 1px solid var(--colorTextOne);
+  border-radius: 4px;
   margin-bottom: 20px;
 }
 .form-wrapper:hover {
@@ -767,6 +774,7 @@ body.no-scroll {
   line-height: 171%;
   letter-spacing: 0.03em;
   text-align: center;
+  /* appearance: none; */
 }
 .modal-accept-agree {
   color: var(--colorHover);
