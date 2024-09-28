@@ -691,10 +691,15 @@ body.no-scroll {
   top: 6px;
   right: 0;
 }
-.modal-icon-close:hover {
-  fill: var(--colorHover);
-  transform: scale(1.25);
-  transition: var(--animOne);
+.modal-button-close::before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  right: 0%;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--colorCustomers);
 }
 .modal-title {
   font-weight: 700;
@@ -774,7 +779,6 @@ body.no-scroll {
   line-height: 171%;
   letter-spacing: 0.03em;
   text-align: center;
-  /* appearance: none; */
 }
 .modal-accept-agree {
   color: var(--colorHover);
