@@ -1,0 +1,130 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+}
+.header-logo {
+  margin-right: 94px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  align-items: center;
+}
+.header-contact-list {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 50px;
+  align-items: center;
+}
+.header-nav-link {
+  position: relative;
+}
+
+.header-nav-link::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--colorHover);
+  bottom: -25px;
+  transform: scaleX(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.header-nav-link.nav-link-activated {
+  color: var(--colorHover);
+}
+
+.header-nav-link.nav-link-activated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--colorHover);
+  bottom: -25px;
+  transform: scaleX(1);
+}
+
+.header-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.header-nav-link,
+.header-contact-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--colorTextOne);
+}
+
+.header-nav-link:hover,
+.header-contact-link:hover {
+  color: var(--colorHover);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.header-contact-item {
+  display: flex;
+  align-items: center;
+}
+.header-contact-link {
+  letter-spacing: 0.02em;
+  color: var(--colorTextTwo);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+  display: flex;
+  align-items: center;
+}
+/* header - icons */
+.header-gmail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--colorCustomers);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+  margin-right: 10px;
+}
+.header-phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--colorCustomers);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+  margin-right: 10px;
+}
+.header-contact-item:hover {
+  color: var(--colorHover);
+}
+.header-contact-item:hover .header-gmail-icon,
+.header-contact-item:hover .header-phone-icon {
+  fill: var(--colorHover);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.header-contact-list,
+.header-nav-list,
+.header-nav,
+.header-container {
+  display: flex;
+  align-items: center;
+}

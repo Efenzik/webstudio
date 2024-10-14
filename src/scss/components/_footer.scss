@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--colorBackgroungPrimary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+.footer-contact-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--colorTextThree);
+  font-style: normal;
+}
+.footer-contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--colorTextAdditional);
+}
+.footer-contact-link:hover {
+  color: var(--colorHover);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.footer-wnetwork-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorTextThree);
+  margin-bottom: 20px;
+}
+.footer-wnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer-wnetwork {
+  width: 44px;
+  height: 44px;
+  background-color: var(--colorFooterLogos);
+  border-radius: 90%;
+}
+.footer-wnetwork:hover {
+  background-color: var(--colorHover);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.footer-wnetwork-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wnetwork-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--colorTextThree);
+}
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+.footer-first {
+  gap: 70px;
+}
+
+.form-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-form-space {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.form-space {
+  padding: 16px 0px 15px 16px;
+  width: 360px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: var(--colorTextThree);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  gap: 10px;
+  background-color: var(--colorHover);
+}
+
+.footer-form-button:hover {
+  -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.form-button-send {
+  fill: var(--colorTextThree);
+  width: 24px;
+  height: 24px;
+}
