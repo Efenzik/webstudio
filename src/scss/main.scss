@@ -1,5 +1,15 @@
+@import "./base/base";
+
 @import "./base/reset";
+
 @import "./utils/typographics";
 @import "./utils/variables";
 @import "./layout/grids";
-@import "./components/all";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/team";
+@import "./components/services";
+@import "./components/customers";
+@import "./components/advantages";
+@import "./components/modal";
+@import "./components/footer";

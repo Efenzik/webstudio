@@ -6,7 +6,7 @@
   display: block; /*Робить елемент - Блочним*/
   content: ""; /*Без content: не буде зміни в згенерованому тексті веб-сторінки*/
   height: 120px; /*Висота елемента -_-*/
-  background-color: var(--colorBackgroungSecondary); /*Колір фону*/
+  background-color: $colorBackgroungSecondary; /*Колір фону*/
   background-size: auto; /*Стандартний розмір картинки*/
   background-position: center; /*Робить елементи по центру*/
   background-repeat: no-repeat; /*Робить що б картинки не повторювалась*/
@@ -15,7 +15,7 @@
 }
 .advantages-item:nth-child(2)::before {
   background-image: url(../images/advantages-icons/clock-1.svg);
-}
+} /*Можна кожен раз робити 2й класс. Наприклад advantages-item-1 / 2 / 3 / 4 або можна зробити через nth-child. */
 .advantages-item:nth-child(3)::before {
   background-image: url(../images/advantages-icons/diagram-1.svg);
 }
@@ -34,11 +34,11 @@
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--colorTextOne);
+  color: $colorTextOne;
 }
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--colorTextTwo);
+  color: $colorTextTwo;
 }

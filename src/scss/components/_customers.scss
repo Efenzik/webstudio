@@ -1,0 +1,42 @@
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.customer {
+  border: 1px solid $colorCustomers;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+.customer-link {
+  width: 170px;
+  height: 92px;
+}
+.customer-logo {
+  width: 106px;
+  height: 60px;
+  fill: $colorCustomers;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+.customer:hover {
+  border: 1px solid $colorHover;
+}
+.customer:hover .customer-logo {
+  fill: $colorHover;
+}
