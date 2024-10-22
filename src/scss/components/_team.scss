@@ -3,21 +3,21 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-members {
+.team__members {
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 30px;
 }
-.team-member {
+.team__member {
   background-color: $colorTextThree;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-.member-photo {
+.member__photo {
   margin-bottom: 30px;
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -25,7 +25,7 @@
   color: $colorTextOne;
   margin-bottom: 50px;
 }
-.team-member-name {
+.team__member__name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -34,7 +34,7 @@
 
   margin-bottom: 10px;
 }
-.team-member-role {
+.team__member__role {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -42,26 +42,26 @@
   color: $colorTextTwo;
   padding-bottom: 16px;
 }
-.team-wnetworks {
+.team__wnetworks {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
   margin-bottom: 30px;
 }
-.wnetwork-icon {
+.wnetwork__icon {
   width: 20px;
   height: 20px;
   fill: $colorCustomers;
 }
-.team-wnetwork-link {
+.team__wnetwork__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
 }
-.team-wnetwork {
+.team__wnetwork {
   width: 44px;
   height: 44px;
   border-radius: 100%;
@@ -70,10 +70,10 @@
   transition-delay: 0s;
 }
 
-.team-wnetwork:hover {
+.team__wnetwork:hover {
   background-color: $colorHover;
   fill: $colorTextThree;
 }
-.wnetwork-icon:hover {
+.wnetwork__icon:hover {
   fill: $colorTextThree;
 }

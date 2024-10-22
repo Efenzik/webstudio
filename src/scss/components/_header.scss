@@ -2,35 +2,35 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
 }
-.header-logo {
+.header__logo {
   margin-right: 94px;
 }
-.header-nav {
+.header__nav {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
   align-items: center;
 }
-.header-nav-list {
+.header__nav__list {
   display: flex;
   justify-content: space-between;
   column-gap: 50px;
   align-items: center;
 }
-.header-contact-list {
+.header__contact__list {
   display: flex;
   justify-content: space-around;
   column-gap: 50px;
   align-items: center;
 }
-.header-nav-link {
+.header__nav__link {
   position: relative;
 }
 
-.header-nav-link::after {
+.header__nav__link::after {
   content: "";
   position: absolute;
   border-radius: 2px;
@@ -44,11 +44,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.header-nav-link.nav-link-activated {
+.header__nav__link.nav__link__activated {
   color: $colorHover;
 }
 
-.header-nav-link.nav-link-activated::after {
+.header__nav__link.nav__link__activated::after {
   content: "";
   position: absolute;
   left: 0;
@@ -59,12 +59,12 @@
   transform: scaleX(1);
 }
 
-.header-nav-link:hover::after {
+.header__nav__link:hover::after {
   transform: scaleX(1);
 }
 
-.header-nav-link,
-.header-contact-link {
+.header__nav__link,
+.header__contact__link {
   position: relative;
   text-decoration: none;
   font-weight: 500;
@@ -72,18 +72,18 @@
   color: $colorTextOne;
 }
 
-.header-nav-link:hover,
-.header-contact-link:hover {
+.header__nav__link:hover,
+.header__contact__link:hover {
   color: $colorHover;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.header-contact-item {
+.header__contact__item {
   display: flex;
   align-items: center;
 }
-.header-contact-link {
+.header__contact__link {
   letter-spacing: 0.02em;
   color: $colorTextTwo;
   transition-duration: 250ms;
@@ -93,7 +93,7 @@
   align-items: center;
 }
 /* header - icons */
-.header-gmail-icon {
+.header__gmail--icon {
   width: 16px;
   height: 12px;
   fill: $colorCustomers;
@@ -102,7 +102,7 @@
   transition-delay: 0s;
   margin-right: 10px;
 }
-.header-phone-icon {
+.header__phone--icon {
   width: 10px;
   height: 16px;
   fill: $colorCustomers;
@@ -111,20 +111,20 @@
   transition-delay: 0s;
   margin-right: 10px;
 }
-.header-contact-item:hover {
+.header__contact__item:hover {
   color: $colorHover;
 }
-.header-contact-item:hover .header-gmail-icon,
-.header-contact-item:hover .header-phone-icon {
+.header__contact__item:hover .header__gmail--icon,
+.header__contact__item:hover .header__phone--icon {
   fill: $colorHover;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.header-contact-list,
-.header-nav-list,
-.header-nav,
-.header-container {
+.header__contact__list,
+.header__nav__list,
+.header__nav,
+.header__container {
   display: flex;
   align-items: center;
 }

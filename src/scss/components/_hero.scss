@@ -13,14 +13,14 @@
   background-repeat: no-repeat;
 }
 
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 30px;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -31,7 +31,7 @@
   max-width: 696px;
 }
 
-.hero-button {
+.hero__button {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -42,7 +42,7 @@
   background-color: $colorButton;
   padding: 10px 32px;
 }
-.hero-button:hover {
+.hero__button:hover {
   -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);

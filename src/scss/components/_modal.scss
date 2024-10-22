@@ -11,7 +11,7 @@
   transition-delay: 0s;
 }
 
-.backdrop.is-hidden {
+.backdrop.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%);
 }
 
-.modal-icon-close {
+.modal__icon__close {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -37,7 +37,7 @@
   top: 6px;
   right: 0;
 }
-.modal-button-close::before {
+.modal__button__close::before {
   content: "";
   position: absolute;
   top: 1%;
@@ -47,7 +47,7 @@
   border-radius: 50%;
   border: 2px solid $colorCustomers;
 }
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -55,15 +55,15 @@
   color: #212121;
   margin-bottom: 12px;
 }
-.modal-form-icon {
+.modal__form__icon {
   width: 20px;
   height: 20px;
 }
-.modal-forms {
+.modal__forms {
   margin: 0 auto;
   max-width: 448px;
 }
-.modal-form-label {
+.modal__form__label {
   display: flex;
   align-items: flex-start;
   color: $colorTextTwo;
@@ -72,33 +72,33 @@
   font-size: 12px;
   letter-spacing: 0.01em;
 }
-.modal-form-case {
+.modal__form__case {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.modal-form-case {
+.modal__form__case {
   border: 1px solid $colorTextOne;
   border-radius: 4px;
 }
-.modal-form-case:hover {
+.modal__form__case:hover {
   border: 1px solid $colorHover;
 }
-.modal-form-case:hover .modal-form-icon {
+.modal__form__case:hover .modal__form__icon {
   fill: $colorHover;
 }
-.modal-form-input {
+.modal__form__input {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
 }
 
-.form-wrapper {
+.form__wrapper {
   border: 1px solid var(--colorTextOne);
   border-radius: 4px;
   margin-bottom: 20px;
 }
-.form-wrapper:hover {
+.form__wrapper:hover {
   border: 1px solid var(--colorHover);
 }
 #text {
@@ -106,31 +106,31 @@
   height: 95px;
   margin-bottom: 20px;
 }
-.modal-form-icon {
+.modal__form__icon {
   width: 18px;
   height: 18px;
   margin-left: 12px;
   margin-right: 12px;
 }
-.modal-checkbox-field {
+.modal__checkbox__field {
   display: flex;
   justify-content: center;
   gap: 5px;
   margin-bottom: 30px;
   color: $colorTextTwo;
 }
-.modal-accept-input {
+.modal__accept__input {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.modal-accept-agree {
+.modal__accept__agree {
   color: $colorHover;
   text-decoration: underline;
 }
-.modal-button-send {
+.modal__button__send {
   color: $colorTextThree;
   font-weight: 700;
   font-size: 16px;
@@ -146,7 +146,7 @@
   margin: 0 auto;
   display: block;
 }
-.modal-button-send:hover {
+.modal__button__send:hover {
   -webkit-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   -moz-box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);
   box-shadow: 0px 0px 33px 8px rgba(33, 150, 243, 1);

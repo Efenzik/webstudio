@@ -2,15 +2,15 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.service-images {
+.service__images {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 30px;
 }
-.service-photo {
+.service__photo {
   position: relative;
 }
-.service-title {
+.service__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -19,7 +19,7 @@
   color: $colorTextOne;
 }
 
-.service-text {
+.service__text {
   background-color: $colorServiceBg;
   color: $colorTextThree;
   padding-top: 27px;
