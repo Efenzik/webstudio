@@ -9,10 +9,6 @@
   }
 }
 
-.modal {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -24,4 +20,26 @@
 
 .footer__wnetwork__icon:hover {
   animation: zoomIn 0.3s forwards;
+}
+@keyframes modalOpen {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Анимация закрытия */
+@keyframes modalClose {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
 }

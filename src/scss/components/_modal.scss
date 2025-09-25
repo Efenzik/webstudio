@@ -7,9 +7,7 @@
   background-color: rgba(0, 0, 0, 0.35);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 1s ease;
 }
-
 .backdrop.is__hidden {
   opacity: 0;
   pointer-events: none;
@@ -19,7 +17,6 @@
   opacity: 1;
   pointer-events: all;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -28,7 +25,13 @@
   opacity: 0;
   background-color: #fff;
   padding: 40px;
-  transition: transform 1s ease, opacity 1s ease;
+}
+.backdrop.is__hidden .modal {
+  animation: modalClose 2s ease forwards;
+}
+
+.backdrop.active .modal {
+  animation: modalOpen 1s ease forwards;
 }
 
 .backdrop.active .modal {
