@@ -265,7 +265,7 @@ html {
   color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+  transition-property: color;
 }
 
 .header__contact__item {
@@ -303,6 +303,8 @@ html {
 .header__contact__item:hover .header__gmail--icon,
 .header__contact__item:hover .header__phone--icon {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 480px) {
@@ -430,7 +432,7 @@ html {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+  transition-property: box-shadow;
 }
 
 .hero {
@@ -559,10 +561,15 @@ html {
 .team__wnetwork:hover {
   background-color: #2196f3;
   fill: #ffffff;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wnetwork__icon:hover {
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 480px) {
@@ -1052,7 +1059,7 @@ html {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+  transition-property: box-shadow;
 }
 
 .footer {
@@ -1093,9 +1100,9 @@ html {
 
 .footer__contact__link:hover {
   color: #2196f3;
-  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .footer__wnetwork__title {
@@ -1116,6 +1123,9 @@ html {
 
 .footer__wnetwork:hover {
   background-color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__wnetwork__link {
@@ -1178,9 +1188,9 @@ html {
 .footer__form__button:hover {
   box-shadow: 0px 0px 33px 8px rgb(33, 150, 243);
   cursor: pointer;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
 }
 
 .form__button__send {

@@ -48,7 +48,8 @@
   color: $colorHover;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+
+  transition-property: color;
 }
 
 .header__contact__item {
@@ -86,6 +87,9 @@
 .header__contact__item:hover .header__gmail--icon,
 .header__contact__item:hover .header__phone--icon {
   fill: $colorHover;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 480px) {
