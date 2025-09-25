@@ -25,6 +25,7 @@
   font-size: 14px;
   line-height: 1.71;
   color: $colorTextAdditional;
+  @include hover-color($colorHover);
 }
 .footer__contact__link:hover {
   color: $colorHover;
@@ -33,12 +34,8 @@
   transition-delay: 0s;
 }
 .footer__wnetwork__title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @extend %title;
   color: $colorTextThree;
-  margin-bottom: 20px;
 }
 .footer__wnetworks {
   display: flex;
@@ -47,16 +44,12 @@
   column-gap: 10px;
 }
 .footer__wnetwork {
-  width: 44px;
-  height: 44px;
+  @extend %icon-circle;
   background-color: $colorFooterLogos;
-  border-radius: 90%;
 }
 .footer__wnetwork:hover {
   background-color: $colorHover;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
+  @extend %icon-circle;
 }
 .footer__wnetwork__link {
   width: 44px;
@@ -106,21 +99,11 @@
 }
 
 .footer__form__button {
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 28px;
+  @extend %button;
   color: $colorTextThree;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  gap: 10px;
   background-color: $colorHover;
+  @include box-shadow(0, 0, 33px, rgba(33, 150, 243, 1));
+  @include rounded(4px);
 }
 
 .footer__form__button:hover {

@@ -1,0 +1,14 @@
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: rgba(0, 0, 0, 0.2)) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin rounded($radius: 4px) {
+  border-radius: $radius;
+}
+
+@mixin hover-color($color) {
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $color;
+  }
+}

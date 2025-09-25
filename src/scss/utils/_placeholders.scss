@@ -4,6 +4,30 @@
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  gap: 10px;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+%title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+%icon-circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

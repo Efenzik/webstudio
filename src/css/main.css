@@ -162,6 +162,40 @@ button {
   outline: none;
 }
 
+.footer__form__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.footer__wnetwork__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__wnetwork:hover, .footer__wnetwork {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -826,6 +860,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__contact__link:hover {
+  color: #2196f3;
 }
 
 .footer__contact__link:hover {
@@ -836,12 +874,7 @@ body {
 }
 
 .footer__wnetwork__title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .footer__wnetworks {
@@ -853,17 +886,11 @@ body {
 }
 
 .footer__wnetwork {
-  width: 44px;
-  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 90%;
 }
 
 .footer__wnetwork:hover {
   background-color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
 }
 
 .footer__wnetwork__link {
@@ -917,21 +944,10 @@ body {
 }
 
 .footer__form__button {
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 28px;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  gap: 10px;
   background-color: #2196f3;
+  box-shadow: 0 0 33px rgb(33, 150, 243);
+  border-radius: 4px;
 }
 
 .footer__form__button:hover {
