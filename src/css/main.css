@@ -14,10 +14,6 @@ img {
     transform: scale(1);
   }
 }
-.modal {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -30,6 +26,27 @@ img {
   animation: zoomIn 0.3s forwards;
 }
 
+@keyframes modalOpen {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+/* Анимация закрытия */
+@keyframes modalClose {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -214,11 +231,11 @@ body {
   transition-delay: 0s;
 }
 
-.header__nav__link.nav__link__activated {
+.header__nav__link.header__nav__link--activated {
   color: #2196f3;
 }
 
-.header__nav__link.nav__link__activated::after {
+.header__nav__link.header__nav__link--activated::after {
   content: "";
   position: absolute;
   left: 0;
@@ -375,7 +392,7 @@ body {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.member__photo {
+.team__member__photo {
   margin-bottom: 30px;
 }
 
@@ -600,7 +617,6 @@ body {
   background-color: rgba(0, 0, 0, 0.35);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 1s ease;
 }
 
 .backdrop.is__hidden {
@@ -621,7 +637,14 @@ body {
   opacity: 0;
   background-color: #fff;
   padding: 40px;
-  transition: transform 1s ease, opacity 1s ease;
+}
+
+.backdrop.is__hidden .modal {
+  animation: modalClose 2s ease forwards;
+}
+
+.backdrop.active .modal {
+  animation: modalOpen 1s ease forwards;
 }
 
 .backdrop.active .modal {
@@ -629,7 +652,7 @@ body {
   opacity: 1;
 }
 
-.modal__icon__close {
+.modal__close-icon {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -639,7 +662,7 @@ body {
   right: 0;
 }
 
-.modal__button__close::before {
+.modal__close-button::before {
   content: "";
   position: absolute;
   top: 1%;
@@ -664,7 +687,7 @@ body {
   height: 20px;
 }
 
-.modal__forms {
+.modal__form {
   margin: 0 auto;
   max-width: 448px;
 }

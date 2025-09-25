@@ -38,7 +38,7 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
-.modal__icon__close {
+.modal__close-icon {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -47,7 +47,7 @@
   top: 6px;
   right: 0;
 }
-.modal__button__close::before {
+.modal__close-button::before {
   content: "";
   position: absolute;
   top: 1%;
@@ -69,7 +69,7 @@
   width: 20px;
   height: 20px;
 }
-.modal__forms {
+.modal__form {
   margin: 0 auto;
   max-width: 448px;
 }

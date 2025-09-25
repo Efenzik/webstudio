@@ -19,7 +19,7 @@
       <div class="container header__container">
         <a href="#" class="header__logo">
           <img
-            class="header__logo__photo"
+            class="header__logo-img"
             src="./src/images/webstudio.svg"
             alt="Логотип ВебСтудіо"
           />
@@ -29,7 +29,7 @@
             <li class="header__nav__item">
               <a
                 href="./index.html"
-                class="header__nav__link nav__link__activated"
+                class="header__nav__link header__nav__link--activated"
                 >Студія</a
               >
             </li>
@@ -70,8 +70,8 @@
           <button class="hero__button" data-modal-open>Замовити послугу</button>
           <div class="backdrop is__hidden" data-modal>
             <div class="modal">
-              <button class="modal__button__close" data-modal-close>
-                <svg class="modal__icon__close">
+              <button class="modal__close-button" data-modal-close>
+                <svg class="modal__close-icon">
                   <use
                     href="./src/images/symbol-defs.svg#modal-icon-close"
                   ></use>
@@ -80,7 +80,7 @@
               <h2 class="modal__title">
                 Залиште свої дані, ми вам передзвонимо
               </h2>
-              <form class="modal__forms" action="form">
+              <form class="modal__form" action="form">
                 <div class="modal__form__space">
                   <label for="name" class="modal__form__label">Ім'я</label>
                   <div class="modal__form__case">
@@ -134,7 +134,7 @@
                   </div>
                 </div>
 
-                <div class="modal__form__space modal__form__comment">
+                <div class="modal__field modal__form__comment">
                   <label
                     class="modal__form__label form__label__comment"
                     for="text"
@@ -241,7 +241,7 @@
           <div class="team__members">
             <article class="team__member">
               <img
-                class="member__photo"
+                class="team__member__photo"
                 src="./src/images/team/ihor.webp"
                 alt="Фото Ігоря Дем'яненко"
               />
@@ -297,7 +297,7 @@
             </article>
             <article class="team__member">
               <img
-                class="member__photo"
+                class="team__member__photo"
                 src="./src/images/team/olga.webp"
                 alt="Фото Ольги Рєпіни"
               />
@@ -353,7 +353,7 @@
             </article>
             <article class="team__member">
               <img
-                class="member__photo"
+                class="team__member__photo"
                 src="./src/images/team/mikola.webp"
                 alt="Фото Миколи Тарасова"
               />
@@ -409,7 +409,7 @@
             </article>
             <article class="team__member">
               <img
-                class="member__photo"
+                class="team__member__photo"
                 src="./src/images/team/mihaylo.webp"
                 alt="Фото Михайла Єрмакова"
               />

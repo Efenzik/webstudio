@@ -44,11 +44,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.header__nav__link.nav__link__activated {
+.header__nav__link.header__nav__link--activated {
   color: $colorHover;
 }
 
-.header__nav__link.nav__link__activated::after {
+.header__nav__link.header__nav__link--activated::after {
   content: "";
   position: absolute;
   left: 0;
