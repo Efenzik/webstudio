@@ -43,6 +43,7 @@
     display: block;
     padding-top: 94px;
     padding-bottom: 94px;
+    display: none;
   }
 
   .service__images {
@@ -74,6 +75,9 @@
 }
 
 @media (min-width: 1200px) {
+  .services {
+    display: flex;
+  }
   .service__photo {
     min-width: calc(33.33% - 30px);
   }
