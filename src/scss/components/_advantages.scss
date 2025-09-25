@@ -2,20 +2,34 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.advantages__item::before {
-  display: block; /*Робить елемент - Блочним*/
-  content: ""; /*Без content: не буде зміни в згенерованому тексті веб-сторінки*/
-  height: 120px; /*Висота елемента -_-*/
-  background-color: $colorBackgroungSecondary; /*Колір фону*/
-  background-size: auto; /*Стандартний розмір картинки*/
-  background-position: center; /*Робить елементи по центру*/
-  background-repeat: no-repeat; /*Робить що б картинки не повторювалась*/
-  margin-bottom: 30px; /*Відступ між фото та advantages-title/text*/
-  background-image: url(../images/advantages-icons/antenna-1.svg); /*Картинка на фоні*/
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: $colorBackgroungSecondary;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-image: url(../images/advantages-icons/antenna-1.svg);
+}
+
 .advantages__item:nth-child(2)::before {
   background-image: url(../images/advantages-icons/clock-1.svg);
-} /*Можна кожен раз робити 2й класс. Наприклад advantages-item-1 / 2 / 3 / 4 або можна зробити через nth-child. */
+}
 .advantages__item:nth-child(3)::before {
   background-image: url(../images/advantages-icons/diagram-1.svg);
 }
@@ -23,11 +37,6 @@
   background-image: url(../images/advantages-icons/astronaut-1.svg);
 }
 
-.advantages__list {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
-}
 .advantages__title {
   font-weight: 700;
   font-size: 14px;
@@ -36,9 +45,45 @@
   text-transform: uppercase;
   color: $colorTextOne;
 }
+
 .advantages__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $colorTextTwo;
+}
+
+@media (min-width: 480px) {
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .advantages__item {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages__list {
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+  .advantages__item {
+    flex: 1 1 45%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .advantages__item {
+    flex: 1 1 22%;
+  }
 }
